@@ -29,7 +29,6 @@ GEM
       tzinfo (~> 1.1)
     acts_as_taggable_on (3.0.0.rc2)
       rails (>= 3, < 5)
-    addressable (2.3.8)
     arel (5.0.1.20140414130214)
     autoprefixer-rails (5.2.1)
       execjs
@@ -43,6 +42,10 @@ GEM
       autoprefixer-rails (>= 5.0.0.1)
       sass (>= 3.2.19)
     builder (3.2.2)
+    climate_control (0.0.3)
+      activesupport (>= 3.0)
+    cocaine (0.5.7)
+      climate_control (>= 0.0.3, < 1.0)
     coderay (1.1.0)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
@@ -58,10 +61,6 @@ GEM
       responders
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
-    dragonfly (1.0.10)
-      addressable (~> 2.3)
-      multi_json (~> 1.0)
-      rack (>= 1.3.0)
     erubis (2.7.0)
     execjs (2.5.2)
     hike (1.2.3)
@@ -79,6 +78,11 @@ GEM
     minitest (5.7.0)
     multi_json (1.11.1)
     orm_adapter (0.5.0)
+    paperclip (4.2.1)
+      activemodel (>= 3.0.0)
+      activesupport (>= 3.0.0)
+      cocaine (~> 0.5.3)
+      mime-types
     rack (1.5.5)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -145,9 +149,9 @@ DEPENDENCIES
   bootstrap-sass
   coffee-rails (~> 4.0.0)
   devise
-  dragonfly
   jbuilder (~> 2.0)
   jquery-rails
+  paperclip
   rails (= 4.1.6)
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)

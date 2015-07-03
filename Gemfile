@@ -20,6 +20,7 @@ gem 'will_paginate'
 gem 'acts_as_taggable_on'
 gem 'better_errors', group: :development
 
-gem 'dragonfly'
+# gem 'dragonfly'
+gem 'paperclip'
 
 
